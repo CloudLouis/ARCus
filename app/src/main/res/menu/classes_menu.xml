@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <item
+        android:id="@+id/classes_change_name"
+        android:title="@string/cls_chg_nm"
+        />
+
+    <item
+        android:id="@+id/classes_delete"
+        android:title="@string/cls_dlt"
+        />
+</menu>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ARCus</string>
+    <string name="material">Materials</string>
+    <string name="classes">Categories</string>
+    <string name="schedule">Schedule</string>
+    <string name="logout">Log out</string>
+    <string name="whiteboard">Whiteboard</string>
+    <string name="user_info">User Information</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_class">Add category</string>
+    <string name="add">Add</string>
+    <string name="class_name">Category name</string>
+    <string name="cls_chg_nm">Edit</string>
+    <string name="cls_dlt">Delete</string>
+    <string name="cls_chk_mtrl">Check materials</string>
+    <string name="header_title">Please choose an activity</string>
+    <string name="home">Home</string>
+    <string name="new_name">New category name</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="class_description">Description/short note</string>
+    <string name="new_materials">Materials</string>
+    <string name="name">Name</string>
+    <string name="File" />
+    <string name="new_file">File name here</string>
+    <string name="browse">Browse</string>
+    <string name="new_title">New title</string>
+    <string name="mtrl_edit">Edit</string>
+    <string name="mtrl_delete">Delete</string>
+    <string name="mtrl_open">Open</string>
+    <string name="discover">Discover</string>
+    <string name="advertise">Advertise</string>
+    <string name="error_missing_permissions">Cannot start without required permissions</string>
+    <string name="stop_advertise">Stop advertising</string>
+    <string name="stop_discover">Stop discovering</string>
+    <string name="mtrl_share">Share</string>
+    <string name="mtrl_name_title">Advertiser Name</string>
+    <string name="mtrl_name_default">Name here</string>
+    <string name="mtrl_connectionTitle">Connected to:</string>
+    <string name="mtrl_advertiseConnectionTitle">Requestor Name</string>
+
+</resources>

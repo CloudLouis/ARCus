@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <item
+        android:id="@+id/materials_change_name"
+        android:title="@string/mtrl_edit"
+        />
+
+    <item
+        android:id="@+id/materials_delete"
+        android:title="@string/mtrl_delete"
+        />
+    <item
+        android:id="@+id/materials_open"
+        android:title="@string/mtrl_open"
+        />
+    <item
+        android:id="@+id/materials_share"
+        android:title="@string/mtrl_share"
+        />
+</menu>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaterialsPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:id="@+id/mtrl_nameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mtrl_name_title" />
+
+        <EditText
+            android:id="@+id/mtrl_nameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/mtrl_name_default"
+            android:layout_below="@id/mtrl_nameTitle"/>
+
+        <Button
+            android:id="@+id/advertise_button"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/advertise"
+            android:layout_below="@id/mtrl_nameInput"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/stop_advertise_button"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_advertise"
+            android:layout_below="@id/advertise_button"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/mtrl_request_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mtrl_advertiseConnectionTitle"
+            android:layout_below="@id/stop_advertise_button" />
+
+        <EditText
+            android:id="@+id/mtrl_request_name_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/mtrl_name_default"
+            android:layout_below="@id/mtrl_request_name_title"/>
+
+        <Button
+            android:id="@+id/connect_button"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mtrl_request_name_input"
+            android:text="@string/discover"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/stop_connect_button"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect_button"
+            android:text="@string/stop_discover"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/mtrl_connectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mtrl_connectionTitle"
+            android:layout_below="@id/stop_connect_button" />
+
+        <TextView
+            android:id="@+id/mtrl_connectedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/mtrl_connectionTitle"/>
+
+        <TextView
+            android:id="@+id/materials_class_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mtrl_connectedName"
+            android:text="@string/classes"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/materials_class_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/materials_class_title" />
+
+        <TextView
+            android:id="@+id/new_materials_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/materials_class_list"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:text="@string/new_materials"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/add_new_material_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/new_materials_title"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/cancel_new_material_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/new_materials_title"
+            android:src="@drawable/ic_cancel" />
+
+        <RelativeLayout
+            android:id="@+id/new_material_field"
+            android:layout_width="409dp"
+            android:layout_height="117dp"
+            android:layout_below="@id/new_materials_title"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="6dp">
+
+            <EditText
+                android:id="@+id/new_material_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/new_material_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/new_material_name"
+                android:layout_marginLeft="3dp"
+                android:text="@string/new_file"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/browse_button"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="108dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/browse"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/confirm_material_add"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/confirm"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/materials_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_material_field"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
